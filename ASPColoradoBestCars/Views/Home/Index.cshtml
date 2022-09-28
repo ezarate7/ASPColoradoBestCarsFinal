@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    
+}
+@model CarProperty
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To Colorado</h1>
+    
+    <h2>Here Are The Vehicles I Recommend For Colorado!</h2>
+    
+    
+
+    @using (Html.BeginForm("ViewCar", "Home", "Post"))
+{
+    <div class="form-group">
+        <label for="">Select a Make</label>
+        <select class="form-control" name="Make" value="">
+            @foreach (var cat in Model.options)
+            {
+                <option value="@cat">@cat</option>
+            }
+        </select>
+    </div>
+    
+    
+    
+  @*  <body1>
+    <div class="container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <p2></p2>
+    </div>
+</body1>*@
+<input type="submit" value="Submit Choice" class="btn btn-primary" />
+    
+
+}
+</div>
