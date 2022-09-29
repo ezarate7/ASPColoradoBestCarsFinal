@@ -16,7 +16,30 @@ html {
 body {
     background: black;
     
+    
     }
+/*#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}*/
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
 
     h1{
     font-family:'Lucida Handwriting';
@@ -29,9 +52,16 @@ label
 
 
 }
-select.form-control{
-    background:black;
+.title{
+    font-size:100px;
     color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+select.form-control{
+    background:transparent;
+    color:white;
+    width:10%;
+   margin-left:45%;
 }
 h2.text-center
 {

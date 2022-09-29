@@ -6,8 +6,14 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome To Eddie's Car Recommendations For Colorado</h1>
+    <div class="background-video" autoplay >
+    <video controls="controls" autoplay loop muted>
+        
+                <source src="~/images/production%20id_5111192.mp4" type="video/mp4" />
+       
+    </video>
+    </div>
     <br />
-    
     
     <body1>
         <div class="container">
@@ -22,7 +28,8 @@
     @using (Html.BeginForm("ViewCar", "Home", "Post"))
     {
     <div class="form-group">
-        <label for="">Select a Vehicle</label>
+
+        <label class="title" for="">Select a Vehicle</label>
         <br/>
         <select class="form-control" name="Make" value="">
             @foreach (var cat in Model.options)
@@ -31,7 +38,7 @@
             }
         </select>
     </div>
-    <br />
+    <br /> <br /><br /><br />
     <input type="submit" value="Submit Choice" class="btn btn-primary" />
     
   
