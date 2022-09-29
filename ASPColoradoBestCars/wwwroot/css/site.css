@@ -13,24 +13,49 @@ html {
   position: relative;
   min-height: 100%;
 }
+body {
+    background: black;
+    
+    }
 
-body2
+    h1{
+    font-family:'Lucida Handwriting';
+    color:white;
+    font-size: 75px
+}
+label
+{
+    color: white;
+
+
+}
+select.form-control{
+    background:black;
+    color:white;
+}
+h2.text-center
+{
+    color:white;
+    font-family: 'Lucida Handwriting';
+
+}
+/*body1
 {
   margin-bottom: 60px;
   display:flex;
   justify-content:center;
   align-items:center;
   min-height: 100vh;
-  background: #111;
   
-}
-*
+  
+}*/
+/**
 {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
 
-}
+}*/
 .container 
 {
     position: relative;
@@ -150,4 +175,8 @@ body2
     font-family:Consolas;
     bottom: -80px;
     letter-spacing: 0.15em;
+}
+
+.font {
+    font-family: 'Lucida Handwriting'
 }
